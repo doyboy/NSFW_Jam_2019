@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
         print(BasicMovement());
         DetectJumping();
         ColPhysChecks();
+        FlipSprite();
     }
 
     private Vector2 BasicMovement()
@@ -77,7 +78,7 @@ public class Player : MonoBehaviour
         return input;
     }
 
-    void DetectJumping()
+    private void DetectJumping()
     {
         if (Input.GetKey(KeyCode.Space))
         {
@@ -89,7 +90,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void ColPhysChecks()
+    private void ColPhysChecks()
     {
         grounded = controller.collisions.below;
 
@@ -108,5 +109,11 @@ public class Player : MonoBehaviour
         }
         
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void FlipSprite()
+    {
+        if (velocity.x > 0) sRenderer.flipX = false;
+        else if (velocity.x < 0) sRenderer.flipX = true;
     }
 }
