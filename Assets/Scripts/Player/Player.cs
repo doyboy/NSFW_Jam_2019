@@ -47,9 +47,6 @@ public class Player : MonoBehaviour
     BoxCollider2D playerCol;
     SpriteRenderer sRenderer;
 
-    GameObject[] tacoStandObjs;
-    BoxCollider2D[] tacoStandCols;
-
     GameObject collisionObj;
 
     private void Start()
