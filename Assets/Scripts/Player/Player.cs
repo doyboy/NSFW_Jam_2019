@@ -39,7 +39,21 @@ public class Player : MonoBehaviour
     [SerializeField]
     float speed = 10f;
     #endregion Speed Vars
+
+    #region Shooting Vars
+    [Range(0.01f, 10f)]
+    [SerializeField]
+    float shootWait = 0.2f;
+    private bool isShooting;
+    float shootTime;
+    private bool justShot;
+    #endregion Shooting Vars
+
+
     #endregion Variables
+
+    public enum PlayerState {walking, idle, shooting}
+    public PlayerState playerState;
 
     [HideInInspector] public Vector2 velocity;
     Controller2D controller;
@@ -49,6 +63,10 @@ public class Player : MonoBehaviour
 
     GameObject collisionObj;
 
+    public Animator animator;
+
+    public bool isFacingRight = true;
+
     private void Start()
     {
         controller = GetComponent<Controller2D>();
@@ -56,14 +74,18 @@ public class Player : MonoBehaviour
         sRenderer = GetComponent<SpriteRenderer>();
 
         playerCol.size = sRenderer.bounds.size;
+        playerState = PlayerState.idle;
+
     }
 
     private void Update()
     {
-        print(BasicMovement());
+        BasicMovement();
         DetectJumping();
         ColPhysChecks();
         FlipSprite();
+        Shooting();
+        updatePlayerState();
     }
 
     private Vector2 BasicMovement()
@@ -77,13 +99,48 @@ public class Player : MonoBehaviour
 
     private void DetectJumping()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             if (controller.collisions.below && !jumping)
             {
                 jumping = true;
                 velocity.y = jumpPower;
             }
+        }
+    }
+
+    private void Shooting(){
+        if (justShot){
+            justShot = false;
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (!isShooting)
+            {
+                isShooting = true;
+                shootTime = 0f;
+                justShot = true;
+
+            }
+        }
+        if (isShooting)
+        {
+            shootTime += Time.deltaTime;
+
+            if (shootTime > shootWait)
+            {
+                isShooting = false;
+                shootTime = 0f;
+            }
+        }
+
+        if (justShot){
+            //taking jizz out of pool to shoot
+            GameObject obj = NewObjectPullerScript.current.GetPooledObject();
+            if (obj == null) return;
+            obj.SetActive(true);
+            obj.transform.position = transform.position;
+            obj.transform.rotation = transform.rotation;
         }
     }
 
@@ -110,7 +167,32 @@ public class Player : MonoBehaviour
 
     private void FlipSprite()
     {
-        if (velocity.x > 0) sRenderer.flipX = false;
-        else if (velocity.x < 0) sRenderer.flipX = true;
+        if (velocity.x > 0)
+        {
+            isFacingRight = true;
+            sRenderer.flipX = false;
+        }
+        else if (velocity.x < 0) 
+        { 
+            sRenderer.flipX = true;
+            isFacingRight = false;
+
+        }
+
+    }
+
+    private void updatePlayerState(){
+        if (justShot)
+        {
+            playerState = PlayerState.shooting;
+            animator.SetTrigger("isShooting");
+        } else if (Mathf.Abs(velocity.x)>0){
+            playerState = PlayerState.walking;
+            animator.SetBool("isWalking", true);
+        } else{
+            playerState = PlayerState.idle;
+            animator.SetBool("isWalking", false);
+        }
+
     }
 }

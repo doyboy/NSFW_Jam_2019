@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: df20a5257a0761342aa7a74f803e14e7
+guid: 08e21a8269eb34cfcacba1e21dafe723
 TextureImporter:
   fileIDToRecycleName:
-    21300000: penis_walk_0
-    21300002: penis_walk_1
-    21300004: penis_walk_2
-    21300006: penis_walk_3
-    21300008: penis_walk_4
-    21300010: penis_walk_5
+    21300000: Jizz_Sprite 1_0
+    21300002: Jizz_Sprite 1_1
+    21300004: Jizz_Sprite 1_2
+    21300006: Jizz_Sprite 1_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -112,121 +110,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: penis_walk_0
+      name: Jizz_Sprite 1_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 72
-        height: 79
+        x: 53
+        y: 137
+        width: 39
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ce107282ea4483438a735b2f2b07f9c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: penis_walk_1
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 0
-        width: 50
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd7291b286136449b6875809583d915
+      spriteID: 2ac0f61a51902468f814357ea1356a33
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_walk_2
+      name: Jizz_Sprite 1_1
       rect:
         serializedVersion: 2
-        x: 163
-        y: 0
-        width: 77
-        height: 85
+        x: 116
+        y: 140
+        width: 41
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887d29010886cba4a979c006048c6fd2
+      spriteID: 44701f183d2ad4d4fb6704aa77b0ed67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_walk_3
+      name: Jizz_Sprite 1_2
       rect:
         serializedVersion: 2
-        x: 247
-        y: 0
-        width: 69
-        height: 92
+        x: 180
+        y: 140
+        width: 45
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71822e6174b6db6409279d699175bb6a
+      spriteID: 10272a0ca60674791800b6e98c7a3870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_walk_4
+      name: Jizz_Sprite 1_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 0
-        width: 65
-        height: 70
+        x: 250
+        y: 138
+        width: 41
+        height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81a57cb1b05b0e943b055b83d20fd585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: penis_walk_5
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 0
-        width: 72
-        height: 79
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2439d49b00c3b514fad44388ef6b65f0
+      spriteID: eb0278f92c6e542e5a81e572c21c1381
       vertices: []
       indices: 
       edges: []
@@ -234,7 +192,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a72055f4d7b24754d838735ff6a0724c
+    spriteID: 0fea3e5a493714122b6983f47b2556c7
     vertices: []
     indices: 
     edges: []
