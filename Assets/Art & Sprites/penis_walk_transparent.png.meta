@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: b748d280189a7ee4e9a09d6a6a26fd7a
+guid: e271d300a8543a14e93b9e7aabf34383
 TextureImporter:
   fileIDToRecycleName:
-    21300000: penis_idle_0
-    21300002: penis_idle_1
-    21300004: penis_idle_2
-    21300006: penis_idle_3
+    21300000: penis_walk_transparent_0
+    21300002: penis_walk_transparent_1
+    21300004: penis_walk_transparent_2
+    21300006: penis_walk_transparent_3
+    21300008: penis_walk_transparent_4
+    21300010: penis_walk_transparent_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -88,81 +90,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: penis_idle_0
+      name: penis_walk_transparent_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 0
         y: 0
-        width: 69
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        width: 57
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f8f22a9bf64e08459df1c45950c7d05
+      spriteID: 9b1794455efdb9c46aa505069309c413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_idle_1
+      name: penis_walk_transparent_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 71
         y: 0
-        width: 69
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471971890d445fa4abb1bb407350ce6d
+      spriteID: a348ef64268d1a34b81cc888ca260607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_idle_2
+      name: penis_walk_transparent_2
       rect:
         serializedVersion: 2
-        x: 206
+        x: 150
         y: 0
-        width: 72
-        height: 66
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 316514cb777c3d9408b72cab8c3bf0f6
+      spriteID: bc0de6b02890b2943b4cc6d639b1b433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: penis_idle_3
+      name: penis_walk_transparent_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 224
         y: 0
-        width: 64
-        height: 66
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efe6f6ff094ea8846b9b0cc6935fbe07
+      spriteID: 01cdf913442be4049a0797b0ea9663e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penis_walk_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c55f56a273db484abf4b7eb651beb83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penis_walk_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 49
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568e2e986aba3344686c7d97a495be59
       vertices: []
       indices: 
       edges: []
@@ -170,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0627476f29a97204bb5095faf1507d30
+    spriteID: ec8bf26ae5c626e458cbd187fc5e12ae
     vertices: []
     indices: 
     edges: []

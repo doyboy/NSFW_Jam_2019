@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: b748d280189a7ee4e9a09d6a6a26fd7a
+guid: 0612d91be1881824f8be785f0bc3189a
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: penis_idle_0
-    21300002: penis_idle_1
-    21300004: penis_idle_2
-    21300006: penis_idle_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -44,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -86,91 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: penis_idle_0
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 69
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f8f22a9bf64e08459df1c45950c7d05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: penis_idle_1
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 69
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 471971890d445fa4abb1bb407350ce6d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: penis_idle_2
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 0
-        width: 72
-        height: 66
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 316514cb777c3d9408b72cab8c3bf0f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: penis_idle_3
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 64
-        height: 66
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efe6f6ff094ea8846b9b0cc6935fbe07
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0627476f29a97204bb5095faf1507d30
+    spriteID: 0a45f83a2d22314439a30c5f4b15e84d
     vertices: []
     indices: 
     edges: []

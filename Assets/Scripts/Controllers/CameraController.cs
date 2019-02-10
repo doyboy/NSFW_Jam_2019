@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
 
     Controller2D controller;
 
-    Player playerScript;
+    Player_Doy playerScript;
 
     Vector3 cameraVelocity;
     #endregion Variables
@@ -41,7 +41,7 @@ public class CameraController : MonoBehaviour
         cameraCollider = gameObject.GetComponent<BoxCollider2D>();
         playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
 
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Doy>();
 
         controller = gameObject.GetComponent<Controller2D>();
 
