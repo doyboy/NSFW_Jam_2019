@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class NewObjectPullerScript : MonoBehaviour
 {
-
     public static NewObjectPullerScript current;
     public GameObject pooledObject;
     public int pooledAmount = 20;
     public bool willGrow = true;
-
 
     List<GameObject> pooledObjects;
 
