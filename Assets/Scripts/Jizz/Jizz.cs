@@ -11,14 +11,14 @@ public class Jizz : MonoBehaviour
     [HideInInspector]
     public float jizzLifetime, jizzSpeed;
 
-    private Player playerScript;
+    private Player_Doy playerScript;
 
     private bool firedRight = false, firedLeft = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Doy>();
 
         print(playerScript);
     }

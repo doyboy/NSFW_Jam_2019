@@ -20,7 +20,7 @@ public class RaycastController : MonoBehaviour
     [HideInInspector] public float horizontalRaySpacing;
     [HideInInspector] public float verticalRaySpacing;
 
-    [HideInInspector] public BoxCollider2D boxCollider;
+    [HideInInspector] public BoxCollider2D boxCol;
 
     Vector2 standardColliderSize;
 
@@ -30,25 +30,32 @@ public class RaycastController : MonoBehaviour
 
     Collider2D collidedObject;
 
+    SpriteRenderer sRend;
+
     public virtual void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        boxCol = GetComponent<BoxCollider2D>();
+        sRend = GetComponent<SpriteRenderer>();
         CalculateRaySpacing();
-        spriteBoundsSize.x = boxCollider.bounds.size.x;
-        spriteBoundsSize.y = boxCollider.bounds.size.y;
-        boxCollider.size = spriteBoundsSize;
-        standardColliderSize = boxCollider.size;
         CalculateRaySpacing();
     }
 
     public virtual void Update()
     {
+        ResizeColliderBox();
+    }
 
+    private void ResizeColliderBox()
+    {
+        spriteBoundsSize.x = sRend.bounds.size.x;
+        spriteBoundsSize.y = sRend.bounds.size.y;
+        boxCol.size = spriteBoundsSize;
+        standardColliderSize = boxCol.size;
     }
 
     public void UpdateRaycastOrigins()
     {
-        Bounds bounds = boxCollider.bounds;
+        Bounds bounds = boxCol.bounds;
         bounds.Expand(skinWidth * -2);
 
         raycastOrigins.bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
@@ -59,7 +66,7 @@ public class RaycastController : MonoBehaviour
 
     public void CalculateRaySpacing()
     {
-        Bounds bounds = boxCollider.bounds;
+        Bounds bounds = boxCol.bounds;
         bounds.Expand(skinWidth * -2);
 
         horizontalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);

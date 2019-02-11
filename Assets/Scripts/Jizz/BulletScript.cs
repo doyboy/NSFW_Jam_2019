@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
     float direction = 1.0f;
     public float speed = 60.0f;
     [SerializeField]
-    Player player;
+    Player_MoToKo player;
 
     public SpriteRenderer sRenderer;
 

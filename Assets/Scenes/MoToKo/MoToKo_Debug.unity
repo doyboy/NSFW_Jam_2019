@@ -1259,7 +1259,7 @@ PrefabInstance:
     - target: {fileID: 1249227062936324432, guid: e7e5d363ec4934203b6a3ecadf7ac1fc,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player (MoToKo)
       objectReference: {fileID: 0}
     - target: {fileID: 1249227062936324445, guid: e7e5d363ec4934203b6a3ecadf7ac1fc,
         type: 3}
