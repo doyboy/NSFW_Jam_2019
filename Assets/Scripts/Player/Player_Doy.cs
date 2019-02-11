@@ -217,7 +217,6 @@ public class Player_Doy : MonoBehaviour
         {
             playerState = PlayerState.shooting;
             animator.SetTrigger("isShooting");
-            animator.Play("DickShoot", 0, 0.5f);
         }
         else if (Mathf.Abs(velocity.x) > 0)
         {
